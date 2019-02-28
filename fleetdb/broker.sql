@@ -1,0 +1,28 @@
+USE [fleet]
+GO
+
+/****** Object:  Table [dbo].[Broker]    Script Date: 2/27/2019 7:50:44 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Broker](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[AddressId] [int] NULL,
+	[MC] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Broker] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Broker]  WITH CHECK ADD  CONSTRAINT [FK_Broker_Address] FOREIGN KEY([AddressId])
+REFERENCES [dbo].[Address] ([Id])
+GO
+
+ALTER TABLE [dbo].[Broker] CHECK CONSTRAINT [FK_Broker_Address]
+GO
+
