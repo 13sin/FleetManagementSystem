@@ -19,3 +19,4 @@ namespace fleetAPI.Models.Data
         public ICollection<Shipment> Shipment { get; set; }
     }
 }
+ 
