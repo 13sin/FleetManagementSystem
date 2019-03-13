@@ -12,3 +12,8 @@ C:\GIT\Fleet\FleetManagementSystem\FleetManagementSystem\FleetManagement\obj\Deb
 C:\GIT\Fleet\FleetManagementSystem\FleetManagementSystem\FleetManagement\bin\Debug\netcoreapp2.1\FleetManagement.pdb
 C:\GIT\Fleet\FleetManagementSystem\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.dll
 C:\GIT\Fleet\FleetManagementSystem\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.pdb
+C:\Users\300985590\Downloads\FleetManagement\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.csproj.CoreCompileInputs.cache
+C:\Users\300985590\Downloads\FleetManagement\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.RazorAssemblyInfo.cache
+C:\Users\300985590\Downloads\FleetManagement\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.RazorAssemblyInfo.cs
+C:\Users\300985590\Downloads\FleetManagement\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.AssemblyInfoInputs.cache
+C:\Users\300985590\Downloads\FleetManagement\FleetManagementSystem\FleetManagement\obj\Debug\netcoreapp2.1\FleetManagement.AssemblyInfo.cs
