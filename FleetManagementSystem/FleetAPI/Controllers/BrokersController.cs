@@ -16,7 +16,7 @@ namespace fleetAPI.Controllers
         private readonly fleetContext _context;
 
         public BrokersController(fleetContext context)
-        {
+        { 
             _context = context;
         }
 

@@ -13,7 +13,7 @@ namespace fleetAPI.Models.Data
 
         public int Id { get; set; }
         public int? AddressId { get; set; }
-        public string Mc { get; set; }
+        public string Mc { get; set; } 
 
         public Address Address { get; set; }
         [JsonIgnore]
