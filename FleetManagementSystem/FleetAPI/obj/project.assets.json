@@ -12716,11 +12716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\300985590\\Desktop\\FleetManagement\\FleetManagementSystem\\FleetAPI\\FleetAPI.csproj",
+      "projectUniqueName": "C:\\Users\\300985590\\Desktop\\SidProject\\FleetManagementSystem\\FleetAPI\\FleetAPI.csproj",
       "projectName": "FleetAPI",
-      "projectPath": "C:\\Users\\300985590\\Desktop\\FleetManagement\\FleetManagementSystem\\FleetAPI\\FleetAPI.csproj",
+      "projectPath": "C:\\Users\\300985590\\Desktop\\SidProject\\FleetManagementSystem\\FleetAPI\\FleetAPI.csproj",
       "packagesPath": "C:\\Users\\300985590\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\300985590\\Desktop\\FleetManagement\\FleetManagementSystem\\FleetAPI\\obj\\",
+      "outputPath": "C:\\Users\\300985590\\Desktop\\SidProject\\FleetManagementSystem\\FleetAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
