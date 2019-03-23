@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-
+//Data for Carrier Controller
 namespace fleetAPI.Models.Data
 {
     public partial class Carrier

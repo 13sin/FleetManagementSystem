@@ -16,8 +16,10 @@ namespace fleetAPI.Controllers
     [ApiController]
     public class CarriersController : ControllerBase
     {
+		
         private readonly fleetContext _context;
-       // private readonly IMapper _mapper;
+      
+	  
         public CarriersController(fleetContext context)//, IMapper mapper)
         {
             _context = context;
@@ -127,6 +129,7 @@ namespace fleetAPI.Controllers
         }
 
         private bool CarrierExists(int id)
+		
         {
             return _context.Carrier.Any(e => e.Id == id);
         }
