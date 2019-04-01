@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Address" />
+    <RootPropertyPathName Name="City" />
+    <RootPropertyPathName Name="LicenseState" />
+    <RootPropertyPathName Name="LicenseType" />
+    <RootPropertyPathName Name="Streetname" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="Shipment" />
+    <RootPropertyPathName Name="BrokerRate" />
+    <RootPropertyPathName Name="Destination" />
+    <RootPropertyPathName Name="Orgin" />
+    <RootPropertyPathName Name="Broker" />
+    <RootPropertyPathName Name="DestinationApptDatetime" />
+    <RootPropertyPathName Name="Province" />
+    <RootPropertyPathName Name="OriginApptDatetime" />
+    <RootPropertyPathName Name="Origin" />
+    <RootPropertyPathName Name="TrailerType" />
+    <RootPropertyPathName Name="Vin" />
+    <RootPropertyPathName Name="Year" />
+    <RootPropertyPathName Name="Model" />
+    <RootPropertyPathName Name="Make" />
+    <RootPropertyPathName Name="LicensePlate" />
+    <RootPropertyPathName Name="TruckType" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Tag" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="AlternatingRowBackground" />
+      <RootProperty Name="AlternatingRowForeground" />
+      <RootProperty Name="AreRowDetailsFrozen" />
+      <RootProperty Name="AreRowGroupHeadersFrozen" />
+      <RootProperty Name="AutoGenerateColumns" />
+      <RootProperty Name="CanUserSortColumns" />
+      <RootProperty Name="CanUserReorderColumns" />
+      <RootProperty Name="CanUserResizeColumns" />
+      <RootProperty Name="ColumnHeaderHeight" />
+      <RootProperty Name="MaxColumnWidth" />
+      <RootProperty Name="FrozenColumnCount" />
+      <RootProperty Name="GridLinesVisibility" />
+      <RootProperty Name="HeadersVisibility" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="RowDetailsVisibilityMode" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Columns" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
+      <RootProperty Name="VerticalOffset" />
+      <RootProperty Name="HorizontalOffset" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Tag" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Binding" />
+      <RootProperty Name="Tag" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="FleetClient.DriverGrid" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MaxLength" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="PlaceholderText" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Items" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="System.String" />
+    <RootType FullName="FleetClient.EditDriver" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Items" />
+      <RootProperty Name="Title" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="Header" />
+      <RootProperty Name="MinuteIncrement" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="FleetClient.EditShipment" />
+    <RootType FullName="FleetClient.EditTrailer" />
+    <RootType FullName="FleetClient.EditTruck" />
+    <RootType FullName="FleetClient.NewDriver" />
+    <RootType FullName="FleetClient.NewShipment" />
+    <RootType FullName="FleetClient.TrailerGrid" />
+    <RootType FullName="FleetClient.TruckGrid" />
+    <RootType FullName="FleetClient.ShipmentGrid" />
+    <RootType FullName="FleetClient.MainPage" />
+    <RootType FullName="FleetClient.NewTrailer" />
+    <RootType FullName="FleetClient.NewTruck" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="Title" />
+      <RootProperty Name="PrimaryButtonText" />
+      <RootProperty Name="SecondaryButtonText" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="PrimaryButtonClick" />
+      <RootEvent Name="SecondaryButtonClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="FleetClient.ShipmentDetails" />
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="CellTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

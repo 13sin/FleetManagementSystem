@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="FleetClient.NewTrailer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="10,0">
+            <StackPanel Orientation="Horizontal" >
+                <Button x:Name="BackButton" Click="Back_Click" Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+                <TextBlock Text="Trailer Information" FontSize="26" Margin="10,0"></TextBlock>
+            </StackPanel>
+            <TextBox x:Name="license" Header= "License Plate Number" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" />
+            <TextBox x:Name="make" Header="Trailer Make" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:Name="model" Header="Trailer Model" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:Name="year" Header="Trailer Year" PlaceholderText="Trailer Year" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:Name="vinnum" Header="Trailer VIN" PlaceholderText="Trailer VIN" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:Name="trailertype" Header="Trailer Type" PlaceholderText="Trailer Type" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+
+            <Button x:Name="TrailerSave" Content="Save" Margin="0,20" Click="TrailerSave_Click"/>
+            <TextBlock x:Name="success" Foreground="Green"  Margin="0,20"/>
+        </StackPanel>
+    </Grid>
+</Page>

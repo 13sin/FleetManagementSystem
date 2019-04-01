@@ -1,0 +1,1 @@
+C:\Users\Red\source\repos\FleetClient\FleetClient\FleetClient.csproj;x86

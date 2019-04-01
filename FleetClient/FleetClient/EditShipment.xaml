@@ -1,0 +1,126 @@
+﻿<Page
+    x:Class="FleetClient.EditShipment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Button x:Name="BackButton" Click="Back_Click" Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+        <Pivot x:Name="rootPivot" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" SelectionChanged="rootPivot_SelectionChanged">
+            <PivotItem Header="Shipment Details" HorizontalAlignment="Stretch" Margin="12,0,-64,-138" VerticalAlignment="Stretch">
+                <StackPanel>
+                    <TextBox x:Name="shipmentRate" Header= "Shipment Rate" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                    <TextBox x:Name="commodity" Header= "Commodity" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" />
+                    <TextBox x:Name="weight" Header= "Weight" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" />
+                    <ComboBox x:Name="Freighttype" Header= "Freight Type" Margin="0,24,0,0"  Width="400" HorizontalAlignment="Left" >
+                        <x:String>FTL</x:String>
+                        <x:String>LTL</x:String>
+                    </ComboBox>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Customer" HorizontalAlignment="Stretch" Margin="12,0,-64,-138" VerticalAlignment="Stretch">
+                <StackPanel>
+                    <TextBox x:Name="cName" Header= "Name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+                    <TextBox x:Name="cPhoneNumber" Header="Phone Number" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+                    <TextBox x:Name="cEmail" Header="Email" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                    <TextBox x:Name="cAddress" Header="Address" PlaceholderText="Address" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                    <RelativePanel>
+                        <TextBox x:Name="cCity" PlaceholderText="City" Margin="0,24,0,0" MaxLength="50" Width="200" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                        <ComboBox x:Name="cProvince" PlaceholderText="State" Margin="24,24,0,0"  Width="100" RelativePanel.RightOf="cCity">
+                            <x:String>AB</x:String>
+                            <x:String>BC</x:String>
+                            <x:String>MB</x:String>
+                            <x:String>NB</x:String>
+                            <x:String>NL</x:String>
+                            <x:String>NS</x:String>
+                            <x:String>ON</x:String>
+                            <x:String>PE</x:String>
+                            <x:String>QC</x:String>
+                            <x:String>SK</x:String>
+                            <x:String>NT</x:String>
+                            <x:String>NU</x:String>
+                            <x:String>YT</x:String>
+                        </ComboBox>
+                    </RelativePanel>
+                    <TextBox x:Name="cZipCode" PlaceholderText="Zip Code" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                    <StackPanel Orientation="Horizontal">
+
+                    </StackPanel>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Origin">
+                <StackPanel>
+                    <TextBox x:Name="oName" Header= "Name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+                    <TextBox x:Name="oPhoneNumber" Header="Phone Number" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+                    <TextBox x:Name="oEmail" Header="Email" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                    <TextBox x:Name="oAddress" Header="Address" PlaceholderText="Address" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                    <RelativePanel>
+                        <TextBox x:Name="oCity" PlaceholderText="City" Margin="0,24,0,0" MaxLength="50" Width="200" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                        <ComboBox x:Name="oProvince" PlaceholderText="State" Margin="24,24,0,0"  Width="100" RelativePanel.RightOf="oCity">
+                            <x:String>AB</x:String>
+                            <x:String>BC</x:String>
+                            <x:String>MB</x:String>
+                            <x:String>NB</x:String>
+                            <x:String>NL</x:String>
+                            <x:String>NS</x:String>
+                            <x:String>ON</x:String>
+                            <x:String>PE</x:String>
+                            <x:String>QC</x:String>
+                            <x:String>SK</x:String>
+                            <x:String>NT</x:String>
+                            <x:String>NU</x:String>
+                            <x:String>YT</x:String>
+                        </ComboBox>
+                    </RelativePanel>
+                    <TextBox x:Name="oZipCode" PlaceholderText="Zip Code" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                    <TextBox x:Name="OriginReferenceNumber" PlaceholderText="Origin Reference Number" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                    <StackPanel Orientation="Vertical" >
+                        <DatePicker x:Name="oDate" Header="Origin date" Margin="0,24,10,0" Width="400" />
+                        <TimePicker x:Name="oTime" Header="Origin time" MinuteIncrement="15"  Margin="0,24,0,0" Width="400" />
+                    </StackPanel>
+                </StackPanel>
+            </PivotItem>
+                <PivotItem Header="Destination">
+                    <StackPanel HorizontalAlignment="Stretch" Margin="0,0,0,-188" VerticalAlignment="Stretch">
+                        <TextBox x:Name="destName" Header= "Name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+                        <TextBox x:Name="destPhoneNumber" Header="Phone Number" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+                        <TextBox x:Name="destEmail" Header="Email" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                        <TextBox x:Name="destAddress" Header="Address" PlaceholderText="Address" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                        <RelativePanel>
+                            <TextBox x:Name="destCity" PlaceholderText="City" Margin="0,24,0,0" MaxLength="50" Width="200" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                            <ComboBox x:Name="destProvince" PlaceholderText="State" Margin="24,24,0,0"  Width="100" RelativePanel.RightOf="destCity">
+                                <x:String>AB</x:String>
+                                <x:String>BC</x:String>
+                                <x:String>MB</x:String>
+                                <x:String>NB</x:String>
+                                <x:String>NL</x:String>
+                                <x:String>NS</x:String>
+                                <x:String>ON</x:String>
+                                <x:String>PE</x:String>
+                                <x:String>QC</x:String>
+                                <x:String>SK</x:String>
+                                <x:String>NT</x:String>
+                                <x:String>NU</x:String>
+                                <x:String>YT</x:String>
+                            </ComboBox>
+                        </RelativePanel>
+                        <TextBox x:Name="destZipCode" PlaceholderText="Zip Code" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                        <TextBox x:Name="DestinationReferenceNumber" PlaceholderText="Destination Reference Number" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+                        <StackPanel Orientation="Vertical">
+                            <DatePicker x:Name="destDate" Header="Destination date" Margin="0,24,10,0" Width="400" />
+                            <TimePicker x:Name="destTime" Header="Destination time" MinuteIncrement="15"  Margin="0,24,0,0" Width="400" />
+                        </StackPanel>
+                    </StackPanel>
+                </PivotItem>
+            </Pivot>
+        <Button x:Name="NextButton"  Content="Next" Click="NextButton_Click" Margin="12,20" />
+            <Button x:Name="EditButton"  Content="Save Shipment" Click="EditButton_Click" Visibility="Collapsed" Margin="12,20" />
+        <TextBlock x:Name="success"/>
+        </StackPanel>
+    </Grid>
+</Page>

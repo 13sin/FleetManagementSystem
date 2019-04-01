@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="FleetClient.EditTruck"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="10,0">
+            <StackPanel Orientation="Horizontal" >
+                <Button x:ConnectionId='10' x:Name="BackButton"                    Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+                <TextBlock Text="Truck Information" FontSize="26" Margin="10,0"></TextBlock>
+            </StackPanel>
+            <TextBox x:ConnectionId='2' x:Name="license" Header= "License Plate Number" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" />
+            <TextBox x:ConnectionId='3' x:Name="make" Header="Truck Make" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:ConnectionId='4' x:Name="model" Header="Truck Model" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:ConnectionId='5' x:Name="year" Header="Truck Year" PlaceholderText="Truck Year" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:ConnectionId='6' x:Name="vinnum" Header="Truck VIN" PlaceholderText="Truck VIN" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+            <TextBox x:ConnectionId='7' x:Name="trucktype" Header="Truck Type" PlaceholderText="Truck Type" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left"  />
+
+            <Button x:ConnectionId='8' x:Name="TruckUpdate" Content="Update" Margin="0,20"                          />
+            <TextBlock x:ConnectionId='9' x:Name="success" Foreground="Green"  Margin="0,20"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
