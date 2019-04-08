@@ -28,8 +28,20 @@
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\FleetClient.exe">
       <PackagePath>entrypoint\FleetClient.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.identitymodel.jsonwebtokens\5.4.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.identitymodel.logging\5.4.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Microsoft.IdentityModel.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.identitymodel.tokens\5.4.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Microsoft.IdentityModel.Tokens.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.ui.xaml.core.direct\2.0.190315001-prerelease\runtimes\win10-x86\native\Microsoft.UI.Xaml.Core.Direct.dll">
+      <PackagePath>Microsoft.UI.Xaml.Core.Direct.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -526,6 +538,15 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\system.identitymodel.tokens.jwt\5.4.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.ui.xaml.core.direct\2.0.190315001-prerelease\lib\uap10.0\Microsoft.UI.Xaml.Core.Direct.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Core.Direct.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -562,50 +583,92 @@
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\DriverGrid.xbf">
-      <PackagePath>DriverGrid.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\BrokerHome.xbf">
+      <PackagePath>Broker\BrokerHome.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\EditDriver.xbf">
-      <PackagePath>EditDriver.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\SendShipmentOrder.xbf">
+      <PackagePath>Broker\SendShipmentOrder.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\EditShipment.xbf">
-      <PackagePath>EditShipment.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\SentShipmentOrderGrid.xbf">
+      <PackagePath>Broker\SentShipmentOrderGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\EditTrailer.xbf">
-      <PackagePath>EditTrailer.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\ShipmentOrderGrid.xbf">
+      <PackagePath>Broker\ShipmentOrderGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\EditTruck.xbf">
-      <PackagePath>EditTruck.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\CarrierHome.xbf">
+      <PackagePath>Carrier\CarrierHome.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\NewDriver.xbf">
-      <PackagePath>NewDriver.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\CarrierShipmentOrderGrid.xbf">
+      <PackagePath>Carrier\CarrierShipmentOrderGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\NewShipment.xbf">
-      <PackagePath>NewShipment.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\AssignShipmentOrderGrid.xbf">
+      <PackagePath>Carrier\AssignShipmentOrderGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\AssignShipmentOrder.xbf">
+      <PackagePath>Carrier\AssignShipmentOrder.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\NewTrailer.xbf">
-      <PackagePath>NewTrailer.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\CustomerHome.xbf">
+      <PackagePath>Customer\CustomerHome.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\NewTruck.xbf">
-      <PackagePath>NewTruck.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\DriverGrid.xbf">
+      <PackagePath>Old\DriverGrid.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\ShipmentDetails.xbf">
-      <PackagePath>ShipmentDetails.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditDriver.xbf">
+      <PackagePath>Old\EditDriver.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\ShipmentGrid.xbf">
-      <PackagePath>ShipmentGrid.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\EditShipment.xbf">
+      <PackagePath>Customer\EditShipment.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\TrailerGrid.xbf">
-      <PackagePath>TrailerGrid.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditTrailer.xbf">
+      <PackagePath>Old\EditTrailer.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\TruckGrid.xbf">
-      <PackagePath>TruckGrid.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditTruck.xbf">
+      <PackagePath>Old\EditTruck.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\NewDriver.xbf">
+      <PackagePath>Old\NewDriver.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\NewShipmentOrder.xbf">
+      <PackagePath>Customer\NewShipmentOrder.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\NewShipment.xbf">
+      <PackagePath>Customer\NewShipment.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\MainPage.xbf">
+      <PackagePath>Old\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTrailer.xbf">
+      <PackagePath>Carrier\NewTrailer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTruck.xbf">
+      <PackagePath>Carrier\NewTruck.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\ShipmentDetails.xbf">
+      <PackagePath>Old\ShipmentDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\InProgressShipmentGrid.xbf">
+      <PackagePath>Customer\InProgressShipmentGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\ShipmentGrid.xbf">
+      <PackagePath>Customer\ShipmentGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\TrailerGrid.xbf">
+      <PackagePath>Old\TrailerGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\TruckGrid.xbf">
+      <PackagePath>Old\TruckGrid.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.ui.xaml\2.0.181018004\build\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
@@ -625,6 +688,14 @@
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\Red\.nuget\packages\microsoft.ui.xaml\2.0.181018004\build\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.0.appx">
+      <Name>Microsoft.UI.Xaml.2.0</Name>
+      <Version>2.1810.18003.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.0, MinVersion = 2.1810.18003.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\Red\.nuget\packages\microsoft.ui.xaml\2.0.181018004\build\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.0.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.1.appx">
       <Name>Microsoft.NET.CoreRuntime.2.1</Name>
       <Version>2.1.26124.5</Version>

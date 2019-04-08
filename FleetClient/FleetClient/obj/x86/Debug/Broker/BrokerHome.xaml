@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="FleetClient.BrokerHome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+
+        <Pivot x:ConnectionId='2' x:Name="rootPivot" Title="Fleet Management System"                                              >
+            <PivotItem Header="Shipments Order">
+                <local:ShipmentOrderGrid x:ConnectionId='5' x:Name="shipmentordergridcontrol"></local:ShipmentOrderGrid>
+            </PivotItem>
+            <PivotItem Header="Sent Shipment Orders">
+                <local:SentShipmentOrderGrid x:ConnectionId='4' x:Name="sentshipmentordergridcontrol"></local:SentShipmentOrderGrid>
+            </PivotItem>
+            <PivotItem Header="Accounts">
+
+            </PivotItem>
+        </Pivot>
+        <Button x:ConnectionId='3' Content="Send Shipment"                    HorizontalAlignment="Left" Margin="207,8,0,0" VerticalAlignment="Top" ></Button>
+    </Grid>
+
+</Page>
+

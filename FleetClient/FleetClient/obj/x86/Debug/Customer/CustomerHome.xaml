@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="FleetClient.CustomerHome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+
+        <Pivot x:ConnectionId='2' x:Name="rootPivot" Title="Fleet Management System"                                              >
+            <PivotItem Header="Shipments ">
+                <local:ShipmentGrid x:ConnectionId='6' x:Name="shipmentgridcontrol"></local:ShipmentGrid>
+            </PivotItem>
+            <PivotItem Header="Shipments In Progress">
+                <local:InProgressShipmentGrid x:ConnectionId='5' x:Name="inprogressshipmentgridcontrol"></local:InProgressShipmentGrid>
+            </PivotItem>
+            <PivotItem Header="Accounts">
+
+            </PivotItem>
+        </Pivot>
+        <Button x:ConnectionId='3' Content="New Shipment"                      HorizontalAlignment="Left" Margin="211,8,0,0" VerticalAlignment="Top" ></Button>
+        <Button x:ConnectionId='4' Content="Send Shipment"                    HorizontalAlignment="Left" Margin="327,8,0,0" VerticalAlignment="Top" ></Button>
+    </Grid>
+
+</Page>
+

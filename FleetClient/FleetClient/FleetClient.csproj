@@ -11,8 +11,8 @@
     <AssemblyName>FleetClient</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -95,28 +95,61 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DriverGrid.xaml.cs">
+    <Compile Include="Broker\BrokerHome.xaml.cs">
+      <DependentUpon>BrokerHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Broker\SendShipmentOrder.xaml.cs">
+      <DependentUpon>SendShipmentOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Broker\SentShipmentOrderGrid.xaml.cs">
+      <DependentUpon>SentShipmentOrderGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Broker\ShipmentOrderGrid.xaml.cs">
+      <DependentUpon>ShipmentOrderGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carrier\CarrierHome.xaml.cs">
+      <DependentUpon>CarrierHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carrier\CarrierShipmentOrderGrid.xaml.cs">
+      <DependentUpon>CarrierShipmentOrderGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carrier\AssignShipmentOrderGrid.xaml.cs">
+      <DependentUpon>AssignShipmentOrderGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carrier\AssignShipmentOrder.xaml.cs">
+      <DependentUpon>AssignShipmentOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerHome.xaml.cs">
+      <DependentUpon>CustomerHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Old\DriverGrid.xaml.cs">
       <DependentUpon>DriverGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditDriver.xaml.cs">
+    <Compile Include="Old\EditDriver.xaml.cs">
       <DependentUpon>EditDriver.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditShipment.xaml.cs">
+    <Compile Include="Customer\EditShipment.xaml.cs">
       <DependentUpon>EditShipment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditTrailer.xaml.cs">
+    <Compile Include="Old\EditTrailer.xaml.cs">
       <DependentUpon>EditTrailer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EditTruck.xaml.cs">
+    <Compile Include="Old\EditTruck.xaml.cs">
       <DependentUpon>EditTruck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewDriver.xaml.cs">
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Old\NewDriver.xaml.cs">
       <DependentUpon>NewDriver.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewShipment.xaml.cs">
+    <Compile Include="Customer\NewShipmentOrder.xaml.cs">
+      <DependentUpon>NewShipmentOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\NewShipment.xaml.cs">
       <DependentUpon>NewShipment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Old\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Address.cs" />
@@ -130,28 +163,31 @@
     <Compile Include="Models\ShipmentOrder.cs" />
     <Compile Include="Models\Trailer.cs" />
     <Compile Include="Models\Truck.cs" />
-    <Compile Include="NewTrailer.xaml.cs">
+    <Compile Include="Carrier\NewTrailer.xaml.cs">
       <DependentUpon>NewTrailer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewTruck.xaml.cs">
+    <Compile Include="Carrier\NewTruck.xaml.cs">
       <DependentUpon>NewTruck.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer\InProgressShipmentGrid.xaml.cs">
+      <DependentUpon>InProgressShipmentGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShipmentDetails.xaml.cs">
+    <Compile Include="Old\ShipmentDetails.xaml.cs">
       <DependentUpon>ShipmentDetails.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShipmentGrid.xaml.cs">
+    <Compile Include="Customer\ShipmentGrid.xaml.cs">
       <DependentUpon>ShipmentGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TrailerGrid.xaml.cs">
+    <Compile Include="Old\TrailerGrid.xaml.cs">
       <DependentUpon>TrailerGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TruckGrid.xaml.cs">
+    <Compile Include="Old\TruckGrid.xaml.cs">
       <DependentUpon>TruckGrid.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <AppxManifest Include="Package.appxmanifest">
+    <AppxManifest Include="Old\Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="FleetClient_TemporaryKey.pfx" />
@@ -171,59 +207,107 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DriverGrid.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditDriver.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditShipment.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditTrailer.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EditTruck.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="NewDriver.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="NewShipment.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Broker\BrokerHome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="NewTrailer.xaml">
+    <Page Include="Broker\SendShipmentOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Broker\SentShipmentOrderGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Broker\ShipmentOrderGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\CarrierHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\CarrierShipmentOrderGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\AssignShipmentOrderGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\AssignShipmentOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Customer\CustomerHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewTruck.xaml">
+    <Page Include="Old\DriverGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ShipmentDetails.xaml">
+    <Page Include="Old\EditDriver.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ShipmentGrid.xaml">
+    <Page Include="Customer\EditShipment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TrailerGrid.xaml">
+    <Page Include="Old\EditTrailer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TruckGrid.xaml">
+    <Page Include="Old\EditTruck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Old\NewDriver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Customer\NewShipmentOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Customer\NewShipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Old\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\NewTrailer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Carrier\NewTruck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Old\ShipmentDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Customer\InProgressShipmentGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Customer\ShipmentGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Old\TrailerGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Old\TruckGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -235,10 +319,20 @@
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
       <Version>5.0.0</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.0.181018004</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml.Core.Direct">
+      <Version>2.0.190315001-prerelease</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.1</Version>
     </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt">
+      <Version>5.4.0</Version>
+    </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

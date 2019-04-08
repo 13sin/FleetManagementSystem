@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="FleetClient.NewDriver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="10,0">
+            <StackPanel Orientation="Horizontal" >
+            <Button x:ConnectionId='11' x:Name="BackButton"                    Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+                <TextBlock Text="Driver Information" FontSize="26" Margin="10,0"></TextBlock>
+            </StackPanel>
+            <TextBox x:ConnectionId='2' x:Name="dName" Header= "Name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+            <TextBox x:ConnectionId='3' x:Name="dPhoneNumber" Header="Phone Number" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+            <TextBox x:ConnectionId='4' x:Name="dEmail" Header="Email" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <TextBox x:ConnectionId='5' x:Name="dAddress" Header="Address" PlaceholderText="Address" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <RelativePanel>
+                <TextBox x:ConnectionId='9' x:Name="dCity" PlaceholderText="City" Margin="0,24,0,0" MaxLength="50" Width="200" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+                <ComboBox x:ConnectionId='10' x:Name="dProvince" PlaceholderText="State" Margin="24,24,0,0"  Width="100" RelativePanel.RightOf="dCity">
+                    <x:String>AB</x:String>
+                    <x:String>BC</x:String>
+                    <x:String>MB</x:String>
+                    <x:String>NB</x:String>
+                    <x:String>NL</x:String>
+                    <x:String>NS</x:String>
+                    <x:String>ON</x:String>
+                    <x:String>PE</x:String>
+                    <x:String>QC</x:String>
+                    <x:String>SK</x:String>
+                    <x:String>NT</x:String>
+                    <x:String>NU</x:String>
+                    <x:String>YT</x:String>
+                </ComboBox>
+            </RelativePanel>
+            <TextBox x:ConnectionId='6' x:Name="dZipCode"  PlaceholderText="Zip Code" Margin="0,24,0,0" MaxLength="6" Width="400" HorizontalAlignment="Left" InputScope="Number" />
+            <Button x:ConnectionId='7' x:Name="DriverSave" Content="Save" Margin="0,20"                         />
+            <TextBlock x:ConnectionId='8' x:Name="success" Foreground="Green"  Margin="0,20"/>
+        </StackPanel>
+    </Grid>
+</Page>
+

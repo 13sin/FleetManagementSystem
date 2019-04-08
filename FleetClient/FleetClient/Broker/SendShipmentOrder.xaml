@@ -1,0 +1,50 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    x:Class="FleetClient.SendShipmentOrder"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <StackPanel Padding="40">
+            <TextBlock ><Run FontSize="40" Text="Send Shipment"/></TextBlock>
+
+
+            <ListView x:Name="shipmentOrderlist" Header="Shipment Order" Margin="0,0,0,10" SelectionChanged="shipmentorderlist_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="shipmentlistdatatemplate">
+                        <StackPanel Height="84" Padding="20" AutomationProperties.Name="{Binding CompositionName}">
+                            <TextBlock Text="{Binding Id}" Tag="ID"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                            <TextBlock Text="{Binding Shipment.Origin.Address.Name}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                            <TextBlock Text="{Binding Shipment.OriginApptDatetime}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                            <TextBlock Text="{Binding Shipment.Destination.Address.Name}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".6" Margin="0,4,0,0"/>
+                            <TextBlock Text="{Binding Shipment.DestinationApptDatetime}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <AutoSuggestBox x:Name="carriersearch" Text="{Binding Address.Name}"  Header="Carrier" VerticalAlignment="Stretch" PlaceholderText="Search" QueryIcon="Find" 
+                TextChanged="carriersearch_TextChanged"
+                QuerySubmitted="carriersearch_QuerySubmitted"
+                SuggestionChosen="carriersearch_SuggestionChosen" Margin="0,0,0,10">
+                <AutoSuggestBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                            <TextBlock Text="{Binding Address.Name}" Tag="Name"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <TextBlock Text=" MC: "></TextBlock>
+                                <TextBlock Text="{Binding Mc}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </AutoSuggestBox.ItemTemplate>
+            </AutoSuggestBox>
+            <Button Name="Save" Content="Send Shipment" Click="Save_Click"></Button>
+            <TextBlock Name="success" Margin="0,4,0,0"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

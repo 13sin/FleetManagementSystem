@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="FleetClient.CarrierHome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FleetClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+
+        <Pivot x:ConnectionId='2' x:Name="rootPivot" Title="Fleet Management System"                                              >
+            <PivotItem Header="Shipments Order">
+                <local:CarrierShipmentOrderGrid x:ConnectionId='7' x:Name="carriershipmentordergridcontrol"></local:CarrierShipmentOrderGrid>
+            </PivotItem>
+            <PivotItem Header="Assigned Shipment Orders">
+                <local:AssignShipmentOrderGrid x:ConnectionId='6' x:Name="assignedshipmentordergridcontrol"></local:AssignShipmentOrderGrid>
+            </PivotItem>
+            <PivotItem Header="Map">
+
+            </PivotItem>
+            <PivotItem Header="Accounts">
+
+            </PivotItem>
+        </Pivot>
+        <Button x:ConnectionId='3' Content="Assign Shipment"                    HorizontalAlignment="Left" Margin="191,8,0,0" VerticalAlignment="Top" ></Button>
+        <Button x:ConnectionId='4' x:Name="newtruck" Content="New Truck"                        HorizontalAlignment="Left" Margin="327,8,0,0" VerticalAlignment="Top" ></Button>
+        <Button x:ConnectionId='5' x:Name="newtrailer" Content="New Triler"                          HorizontalAlignment="Left" Margin="431,8,0,0" VerticalAlignment="Top" ></Button>
+    </Grid>
+
+</Page>
+
