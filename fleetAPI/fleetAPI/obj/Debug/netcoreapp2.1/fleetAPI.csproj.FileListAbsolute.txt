@@ -1,0 +1,14 @@
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\bin\Debug\netcoreapp2.1\fleetAPI.deps.json
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\bin\Debug\netcoreapp2.1\fleetAPI.runtimeconfig.json
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\bin\Debug\netcoreapp2.1\fleetAPI.runtimeconfig.dev.json
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\bin\Debug\netcoreapp2.1\fleetAPI.dll
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\bin\Debug\netcoreapp2.1\fleetAPI.pdb
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.csprojAssemblyReference.cache
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.csproj.CoreCompileInputs.cache
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.RazorAssemblyInfo.cache
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.RazorAssemblyInfo.cs
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.AssemblyInfoInputs.cache
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.AssemblyInfo.cs
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.dll
+C:\Users\Red\source\repos\fleetAPI\fleetAPI\obj\Debug\netcoreapp2.1\fleetAPI.pdb

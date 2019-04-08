@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using AuthServer.Areas.Identity.Data
+@inject SignInManager<AuthServerUser> SignInManager
+@inject UserManager<AuthServerUser> UserManager
+
+
+@{
+    ViewData["Title"] = "Home Page";
+    AuthServerUser authServerUser = await UserManager.GetUserAsync(User);
+}
+
+
+<br />
+@if (SignInManager.IsSignedIn(User))
+{
+    @if (authServerUser.customerID == 0)
+    {
+        <a href="/Customer/Create">Activate as Customer</a>// Activate Customer
+    }
+    else
+    {
+        <a href="/Customer/Details">Customer Details</a>// Activate Customer
+    }
+    <br />
+    @if (authServerUser.carrierID == 0)
+    {
+        <a href="/Carrier/Create">Activate as Carrier</a>// Activate Customer
+    }
+    else
+    {
+        <a href="/Carrier/Details">Carrier Details</a>// Activate Customer
+    }
+    <br />
+    @if (authServerUser.brokerID == 0)
+    {
+        <a href="/Broker/Create">Activate as Broker</a>// Activate Customer
+    }
+    else
+    {
+        <a href="/Broker/Details">Broker Details</a>// Activate Customer
+    }
+    <br />
+    @if (authServerUser.customerID != 0 || authServerUser.brokerID != 0 || authServerUser.carrierID != 0)
+    {
+        <a href="/EmployeeWeb">Create Employee Login</a>// ShiftAcceptWeb
+    }
+
+    <br />
+}
+

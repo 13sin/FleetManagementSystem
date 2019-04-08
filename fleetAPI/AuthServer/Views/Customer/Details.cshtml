@@ -1,0 +1,22 @@
+﻿@model AuthServer.Models.DataContract.Customer
+@using Microsoft.AspNetCore.Identity
+@using AuthServer.Areas.Identity.Data
+@inject SignInManager<AuthServerUser> SignInManager
+@inject UserManager<AuthServerUser> UserManager
+
+
+@{
+    
+    AuthServerUser authServerUser = await UserManager.GetUserAsync(User);
+}
+<div>
+    <h4>Customer Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @await Html.PartialAsync("../Shared/Address/Details.cshtml", Model.Address)
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", Model.Id)
+    @Html.ActionLink("Delete", "Delete", authServerUser.customerID)
+</div>

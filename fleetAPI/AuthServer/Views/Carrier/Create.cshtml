@@ -1,0 +1,50 @@
+﻿@model AuthServer.Models.DataContract.Carrier
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>Carrier</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <partial name="Address/Create" />
+            <div class="form-group">
+                <label asp-for="Mc" class="control-label"></label>
+                <input asp-for="Mc" class="form-control" />
+                <span asp-validation-for="Mc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usdot" class="control-label"></label>
+                <input asp-for="Usdot" class="form-control" />
+                <span asp-validation-for="Usdot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cvor" class="control-label"></label>
+                <input asp-for="Cvor" class="form-control" />
+                <span asp-validation-for="Cvor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ctpat" class="control-label"></label>
+                <input asp-for="Ctpat" class="form-control" />
+                <span asp-validation-for="Ctpat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Current Details</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

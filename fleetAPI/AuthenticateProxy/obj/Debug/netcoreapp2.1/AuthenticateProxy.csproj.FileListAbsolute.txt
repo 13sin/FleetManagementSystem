@@ -1,0 +1,14 @@
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\bin\Debug\netcoreapp2.1\AuthenticateProxy.deps.json
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\bin\Debug\netcoreapp2.1\AuthenticateProxy.runtimeconfig.json
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\bin\Debug\netcoreapp2.1\AuthenticateProxy.runtimeconfig.dev.json
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\bin\Debug\netcoreapp2.1\AuthenticateProxy.dll
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\bin\Debug\netcoreapp2.1\AuthenticateProxy.pdb
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.csprojAssemblyReference.cache
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.csproj.CoreCompileInputs.cache
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.RazorAssemblyInfo.cache
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.RazorAssemblyInfo.cs
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.AssemblyInfoInputs.cache
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.AssemblyInfo.cs
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.RazorTargetAssemblyInfo.cache
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.dll
+C:\Users\Red\source\repos\fleetAPI\AuthenticateProxy\obj\Debug\netcoreapp2.1\AuthenticateProxy.pdb

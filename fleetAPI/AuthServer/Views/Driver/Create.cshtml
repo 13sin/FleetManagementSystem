@@ -1,0 +1,51 @@
+﻿@model AuthServer.Models.DataContract.Driver
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>Driver</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <partial name="Address/Create" />
+            <div class="form-group">
+                <label asp-for="LicenseNumber" class="control-label"></label>
+                <input asp-for="LicenseNumber" class="form-control" />
+                <span asp-validation-for="LicenseNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LicenseState" class="control-label"></label>
+                <input asp-for="LicenseState" class="form-control" />
+                <span asp-validation-for="LicenseState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LicenseType" class="control-label"></label>
+                <input asp-for="LicenseType" class="form-control" />
+                <span asp-validation-for="LicenseType" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" value="@ViewBag.userid" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div><br />
+            <span class="text-success">@ViewBag.success</span>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
