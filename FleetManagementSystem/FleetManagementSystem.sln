@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetAPI", "FleetAPI\FleetAPI.csproj", "{1A086E50-6517-4331-B313-97EC72423536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetAPI", "FleetAPI\FleetAPI.csproj", "{1A086E50-6517-4331-B313-97EC72423536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetInvoiceManagement", "FleetInvoiceManagement\FleetInvoiceManagement.csproj", "{F73C0A59-7342-45BF-AC1F-AD26A5F52150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1A086E50-6517-4331-B313-97EC72423536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A086E50-6517-4331-B313-97EC72423536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A086E50-6517-4331-B313-97EC72423536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73C0A59-7342-45BF-AC1F-AD26A5F52150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73C0A59-7342-45BF-AC1F-AD26A5F52150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73C0A59-7342-45BF-AC1F-AD26A5F52150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73C0A59-7342-45BF-AC1F-AD26A5F52150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
