@@ -6,70 +6,361 @@
     <title>@ViewData["Title"] - FleetInvoiceManagement</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+        <link rel="stylesheet" href="~/css/normalize.css">
+        <link rel="stylesheet" href="~/css/animate.css">
+        <link rel="stylesheet" href="~/css/stellarnav.min.css">
+        <link rel="stylesheet" href="~/css/owl.carousel.css">
+        <link href="~/css/bootstrap.min.css" rel="stylesheet">
+        <link href="~/css/font-awesome.min.css" rel="stylesheet">
+        <!--====== MAIN STYLESHEETS ======-->
+        <link href="~/css/style.css" rel="stylesheet">
+        <link href="~/css/responsive.css" rel="stylesheet">
+        <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
     </environment>
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FleetInvoiceManagement</a>
+<!--<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FleetInvoiceManagement</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+            </ul>
+            <partial name="_LoginPartial" />
+        </div>
+    </div>
+</nav>
+
+<partial name="_CookieConsentPartial" />
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; 2019 - FleetInvoiceManagement</p>
+    </footer>
+</div>
+    -->
+<body class="home-two">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="#home" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="search-and-language-bar pull-right">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-user"></i></a></li>
+                                <li class="search-box"><i class="fa fa-search"></i></li>
+                                <!--- <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+    <li class="select-language">
+         <select name="#" id="#">
+             <option selected value="End">ENG</option>
+             <option value="ARA">ARA</option>
+             <option value="CHI">CHI</option>
+         </select>
+     </li>-->                   
+                            </ul>
+                            <form action="#" class="search-form">
+                                <input type="search" name="search" id="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div id="main-nav" class="stellarnav">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index">home</a>
+                                    <!---<ul>
+                                        <li><a href="index.html">Home Version 1</a></li>
+                                        <li><a href="index-2.html">Home Version 2</a></li>
+                                        <li><a href="index-3.html">Home Version 3</a></li>
+                                        <li><a href="index-4.html">Home Version 4</a></li>
+                                    </ul>-->
+                                </li>
+                                <li>
+                                    <a href="about.html">about</a>
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about-company-profile.html">About Profile</a></li>
+                                        <li><a href="about-company-history.html">About History</a></li>
+                                        <li><a href="about-company-report.html">About Report</a></li>
+                                        <li><a href="about-team.html">About Team</a></li>
+                                        <li><a href="about-support.html">About Support</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="service.html">Service</a>
+                                    <ul>
+                                        <li><a href="service.html">Generate Invoice</a></li>
+                                        <li><a href="service-2.html">View Invoices</a></li>
+                                    </ul>
+                                </li>
+                                <!---<li>
+                                    <a href="">Other Pages</a>
+                                    <ul>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>-->
+                                <li>
+                                    <a href="blog.html">Our Team</a>
+                                    <!---<ul>
+                                        <li><a href="blog.html">Blog Version 1</a></li>
+                                        <li><a href="blog-2.html">Blog Version 2</a></li>
+                                        <li><a href="single-blog.html">Single Blog</a></li>
+                                    </ul>-->
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                    <!--<ul>
+                                        <li><a href="contact.html">Contact Version 1</a></li>
+                                        <li><a href="contact-2.html">Contact Version 2</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="/Identity/Account/Register">Register</a></li>
+                                <li><a href="/Identity/Account/Login">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                <partial name="_LoginPartial" />
+            <!--END MAINMENU AREA END-->
+        </div>
+        <div class="welcome-area">
+            <div class="welcome-area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="welcome-text text-center">
+                            <h1>WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
+    </header>
+    <!--END TOP AREA-->
+    <!--BLOG AREA-->
+    <section class="blog-area gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-image">
+                            <img src="img/blog/blog_1.jpg" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-ship"></i></a></div>
+                            <h3><a href="single-blog.html">Ocean Freight</a></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                            <a href="single-blog.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-image">
+                            <img src="img/blog/blog_2.jpg" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-plane"></i></a></div>
+                            <h3><a href="single-blog.html">Air Freight</a></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                            <a href="single-blog.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-image">
+                            <img src="img/blog/blog_3.jpg" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
+                            <h3><a href="single-blog.html">Street Freight</a></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                            <a href="single-blog.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BLOG AREA END-->
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - FleetInvoiceManagement</p>
-        </footer>
     </div>
-
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
-    @RenderSection("Scripts", required: false)
+<!--CLIENTS AREA END-->
+    <!--FOOER AREA-->
+    <div class="footer-area dark-bg">
+        <div class="footer-area-bg"></div>
+        <div class="footer-top-area wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscribe-content">
+                            <h2>Weekly Newsletter</h2>
+                            <p>There are many vaiations of passages of lorem ipsum available.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscriber-form-area">
+                            <form action="#" class="subsriber-form">
+                                <label for="subscriber-mail"><i class="fa fa-envelope-o"></i></label>
+                                <input type="email" name="subscriber-mail" id="subscriber-mail" placeholder="Enter Your Mail">
+                                <button type="submit">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget footer-about">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> <a href="callto:+8801911854378">+8801911854378</a></li>
+                                <li><i class="fa fa-map-marker"></i> <a href="mailto:backpiper.com@gmail.com">backpiper.com@gmail.com</a></li>
+                                <li><i class="fa fa-phone"></i> Gazipur, 1704, Bangladesh.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget twitter-widget">
+                            <h3>Latest Tweets</h3>
+                            <ul>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-phone"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
+                                        <a href="#" class="tweet-meta">5 Miniutes Ago</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-phone"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
+                                        <a href="#" class="tweet-meta">5 Miniutes Ago</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget list-widget">
+                            <h3>Customer Service</h3>
+                            <ul>
+                                <li><a href="#">Support Forums</a></li>
+                                <li><a href="#">Communication</a></li>
+                                <li><a href="#">FAQS</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Rules & Condition</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget instafeed-widget">
+                            <h3>Customer Service</h3>
+                            <ul>
+                                <li><a href="#"><img src="img/instafeed/1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/6.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-copyright wow fadeIn">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-social-bookmark text-right wow fadeIn">
+                            <ul class="social-bookmark">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOER AREA END-->
+    <!--====== SCRIPTS JS ======-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--====== PLUGINS JS ======-->
+    <script src="js/vendor/jquery.easing.1.3.js"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/vendor/jquery.appear.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/stellarnav.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <!--===== ACTIVE JS=====-->
+    <script src="js/main.js"></script>
+@RenderSection("Scripts", required: false)
 </body>
+
 </html>
