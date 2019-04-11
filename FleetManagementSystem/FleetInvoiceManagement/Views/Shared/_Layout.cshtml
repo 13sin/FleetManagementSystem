@@ -82,10 +82,11 @@
                                 @if (SignInManager.IsSignedIn(User))
                                 {
                                     <li>
-                                        <a href="service.html">Services</a>
+                                        <a asp-area="" asp-controller="GoogleDrive" asp-action="Index">Services</a>
                                         <ul>
-                                            <li><a href="service.html">Generate Invoice</a></li>
-                                            <li><a href="service-2.html">View Invoices</a></li>
+                                            <li><a asp-area="" asp-controller="Invoices" asp-action="Create">Generate New Invoice</a></li>
+                                            <li><a asp-area="" asp-controller="Invoices" asp-action="Index">Existing Invoices</a></li>
+                                            <li><a asp-area="" asp-controller="GoogleDrive" asp-action="Index">Cloud Invoice Files</a></li>
                                         </ul>
                                     </li>
                                 } 
@@ -187,7 +188,7 @@
         </div>
     </section>
     <!--BLOG AREA END-->
-    <div class="container body-content" style="background-color:#D3D3D3">
+    <div class="container body-content" >
         @RenderBody()
         <hr />
     </div>

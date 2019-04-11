@@ -1,0 +1,61 @@
+﻿@model FleetInvoiceManagement.Models.Invoice
+
+@{
+    ViewData["Title"] = "Generate Invoice";
+}
+
+<script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+            scrollTop: $('#homecontainer').offset().top
+        }, 'slow');
+    });
+</script>
+<hr />
+<div class="row" id="homecontainer">
+    <div style="height:100px;width:100%;margin-top:25px;"></div>
+    <h2>@ViewData["Title"]</h2>
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="InvoiceTitle" class="control-label"></label>
+                <input asp-for="InvoiceTitle" class="form-control" />
+                <span asp-validation-for="InvoiceTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tax" class="control-label"></label>
+                <input asp-for="Tax" class="form-control" />
+                <span asp-validation-for="Tax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sales" class="control-label"></label>
+                <input asp-for="Sales" class="form-control" />
+                <span asp-validation-for="Sales" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreationDate" class="control-label"></label>
+                <input asp-for="CreationDate" class="form-control" />
+                <span asp-validation-for="CreationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

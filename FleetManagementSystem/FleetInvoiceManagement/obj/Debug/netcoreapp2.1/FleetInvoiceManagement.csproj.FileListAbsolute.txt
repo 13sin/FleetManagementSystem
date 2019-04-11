@@ -33,7 +33,6 @@ C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\F
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.pdb
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.csproj.CopyComplete
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\bin\Debug\netcoreapp2.1\credentials.json
-C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Home\Team.g.cshtml.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
@@ -45,3 +44,11 @@ C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\F
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\GoogleDrive\AddInvoice.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\GoogleDrive\Index.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Create.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Delete.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Details.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Edit.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Index.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
