@@ -1,17 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+            scrollTop: $('#homecontainer').offset().top
+        }, 'slow');
+    });
+</script>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div style="height:800px;width:100%;" id="homecontainer">
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <div style="height:100px;width:100%;margin-top:25px;"></div>
+    <h2>@ViewData["Title"]</h2>
+
+    <h1>Enter your contact page data here </h1>
+
+</div>

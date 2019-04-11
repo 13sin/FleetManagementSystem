@@ -29,6 +29,13 @@ namespace FleetInvoiceManagement.Controllers
             return View();
         }
 
+        public IActionResult Team()
+        {
+            ViewData["Message"] = "Your team page.";
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

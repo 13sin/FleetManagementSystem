@@ -9,7 +9,6 @@ C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\F
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.csproj.CoreCompileInputs.cache
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.RazorAssemblyInfo.cache
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.RazorAssemblyInfo.cs
-C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.AssemblyInfoInputs.cache
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.AssemblyInfo.cs
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.TagHelpers.input.cache
@@ -33,3 +32,16 @@ C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\F
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.dll
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.pdb
 C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.csproj.CopyComplete
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\bin\Debug\netcoreapp2.1\credentials.json
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Home\Team.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\300985590\Desktop\Shiva_Project\FleetManagement\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs

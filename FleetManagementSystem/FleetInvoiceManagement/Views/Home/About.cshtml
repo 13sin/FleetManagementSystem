@@ -1,7 +1,22 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+            scrollTop: $('#homecontainer').offset().top
+        }, 'slow');
+    });
+</script>
+
+<div style="height:800px;width:100%;" id="homecontainer">
+
+    <div style="height:100px;width:100%;margin-top:25px;"></div>
+    <h2>@ViewData["Title"]</h2>
+
+    <h1>Enter your about page data here </h1>
+
+</div>
