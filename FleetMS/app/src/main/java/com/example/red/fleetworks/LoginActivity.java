@@ -373,6 +373,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     //mTextView.setText("That didn't work!");
+                    error.printStackTrace();
                     showProgress(false);
                     Context context = getApplicationContext();
                     CharSequence text = ":-(";

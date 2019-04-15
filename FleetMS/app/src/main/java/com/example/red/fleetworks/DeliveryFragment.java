@@ -110,9 +110,9 @@ public class DeliveryFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Pickups pickup = (Pickups) DeliveryAdapter.getItem(position);
+                Delivery delivery = (Delivery) DeliveryAdapter.getItem(position);
                 Intent intent = new Intent(getActivity(), MainActivity.class);
-                intent.putExtra("pickup", pickup);
+                intent.putExtra("delivery", delivery);
                 startActivity(intent);
             }
         });

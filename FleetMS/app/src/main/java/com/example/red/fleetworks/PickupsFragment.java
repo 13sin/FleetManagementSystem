@@ -111,7 +111,7 @@ public class PickupsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Pickups pickup = (Pickups) pickupsAdapter.getItem(position);
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), ShipmentSelected.class);
                 intent.putExtra("pickup", pickup);
                 startActivity(intent);
             }

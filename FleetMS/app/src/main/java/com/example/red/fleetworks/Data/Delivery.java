@@ -42,4 +42,16 @@ public class Delivery implements Serializable {
     public String getZipcode() {
         return zipcode;
     }
+
+    public int getCarrierId() {
+        return carrierId;
+    }
+
+    public int getDriverId() {
+        return driverId;
+    }
+
+    public int getShipmentOrderId() {
+        return shipmentOrderId;
+    }
 }
