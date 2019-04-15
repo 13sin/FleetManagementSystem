@@ -353,6 +353,32 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1716,6 +1742,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -3409,6 +3461,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -5141,6 +5219,32 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6658,6 +6762,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -8351,6 +8481,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -10089,6 +10245,32 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -11780,6 +11962,32 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "PubnubUWP/4.0.28": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Newtonsoft.Json": "9.0.1",
+          "Portable.BouncyCastle": "1.8.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/PubnubUWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/PubnubUWP.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -13885,6 +14093,43 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.8.1.2": {
+      "sha512": "6aUyZBCKSk4aYRoSn5lceISsELIFNHeZGMhsaQSEHxQh9ehhGjOT71feShcvuaBLRTM6bcmZbfwEmvZLUHO6mw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.8.1.2",
+      "files": [
+        ".signature.p7s",
+        "Readme.html",
+        "lib/net4/BouncyCastle.Crypto.dll",
+        "lib/net4/BouncyCastle.Crypto.pdb",
+        "lib/net4/BouncyCastle.Crypto.xml",
+        "lib/netstandard1.0/BouncyCastle.Crypto.deps.json",
+        "lib/netstandard1.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard1.0/BouncyCastle.Crypto.pdb",
+        "lib/netstandard1.0/BouncyCastle.Crypto.xml",
+        "lib/netstandard1.3/BouncyCastle.Crypto.deps.json",
+        "lib/netstandard1.3/BouncyCastle.Crypto.dll",
+        "lib/netstandard1.3/BouncyCastle.Crypto.pdb",
+        "lib/netstandard1.3/BouncyCastle.Crypto.xml",
+        "lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.dll",
+        "lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.pdb",
+        "lib/portable-net4+sl5+wp8+win8+wpa81/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.8.1.2.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
+    "PubnubUWP/4.0.28": {
+      "sha512": "giaK3tldhKui0qn6EBFDjGBavfz+CtUGhX+PoblA9BSwY5WbunpuNXXLLyRBKrELf/7jMZHcLpcXzM3C+iNQ7w==",
+      "type": "package",
+      "path": "pubnubuwp/4.0.28",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/uap10.0/PubnubUWP.dll",
+        "pubnubuwp.4.0.28.nupkg.sha512",
+        "pubnubuwp.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -20598,6 +20843,7 @@
       "Microsoft.UI.Xaml >= 2.0.181018004",
       "Microsoft.UI.Xaml.Core.Direct >= 2.0.190315001-prerelease",
       "Newtonsoft.Json >= 12.0.1",
+      "PubnubUWP >= 4.0.28",
       "System.IdentityModel.Tokens.Jwt >= 5.4.0"
     ]
   },
@@ -20657,6 +20903,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "PubnubUWP": {
+            "target": "Package",
+            "version": "[4.0.28, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",

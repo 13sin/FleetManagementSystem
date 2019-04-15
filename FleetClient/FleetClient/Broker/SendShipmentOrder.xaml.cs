@@ -101,7 +101,7 @@ namespace FleetClient
         {
             //selectedshipment.Broker = selectedbroker;
             selectedshipmentorder.CarrierId = selectedcarrier.Id;
-            
+            selectedshipmentorder.CarrierRate = Convert.ToDecimal(carrierrate.Text);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Add("apikey", "NbqYQDjspLDvorREUZAnyHZyCC3GoPGs");
             string json = JsonConvert.SerializeObject(selectedshipmentorder);

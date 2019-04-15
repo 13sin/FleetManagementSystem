@@ -16,9 +16,9 @@
             <PivotItem Header="Shipments In Progress">
                 <local:InProgressShipmentGrid x:Name="inprogressshipmentgridcontrol"></local:InProgressShipmentGrid>
             </PivotItem>
-            <PivotItem Header="Accounts">
+            <!--<PivotItem Header="Accounts">
 
-            </PivotItem>
+            </PivotItem>-->
         </Pivot>
         <Button Content="New Shipment" Click="Button_Click" HorizontalAlignment="Left" Margin="211,8,0,0" VerticalAlignment="Top" ></Button>
         <Button Content="Send Shipment" Click="Send_Click" HorizontalAlignment="Left" Margin="327,8,0,0" VerticalAlignment="Top" ></Button>

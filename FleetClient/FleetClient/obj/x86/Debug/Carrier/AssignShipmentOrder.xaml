@@ -10,13 +10,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <StackPanel Padding="40">
+            <Button x:ConnectionId='2' x:Name="BackButton"                    Style="{StaticResource NavigationBackButtonNormalStyle}"/>
             <TextBlock ><Run FontSize="40" Text="Assign Driver To Shipment"/></TextBlock>
 
 
-            <ListView x:ConnectionId='2' x:Name="shipmentOrderlist" Header="Shipment Order" Margin="0,0,0,10"                                                      >
+            <ListView x:ConnectionId='3' x:Name="shipmentOrderlist" Header="Shipment Order" Margin="0,0,0,10"                                                      >
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="shipmentlistdatatemplate">
-                        <StackPanel Height="84" Padding="20" AutomationProperties.Name="{Binding CompositionName}">
+                        <StackPanel Height="84" Padding="20" >
                             <TextBlock Text="{Binding Id}" Tag="ID"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
                             <TextBlock Text="{Binding Shipment.Origin.Address.Name}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
                             <TextBlock Text="{Binding Shipment.OriginApptDatetime}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
@@ -27,7 +28,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:ConnectionId='3' x:Name="truckslist" Header="Truck" Margin="0,0,0,10"                                               >
+            <ListView x:ConnectionId='4' x:Name="truckslist" Header="Truck" Margin="0,0,0,10"                                               >
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="truckdatatemplate">
                         <StackPanel Height="84" Padding="20">
@@ -40,7 +41,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:ConnectionId='4' x:Name="trailerslist" Header="Trailer" Margin="0,0,0,10"                                                 >
+            <ListView x:ConnectionId='5' x:Name="trailerslist" Header="Trailer" Margin="0,0,0,10"                                                 >
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="trailerdatatemplate">
                         <StackPanel Height="84" Padding="20" >
@@ -52,7 +53,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <AutoSuggestBox x:ConnectionId='5' x:Name="driversearch" Text="{Binding Address.Name}"  Header="Driver" VerticalAlignment="Stretch" PlaceholderText="Search" QueryIcon="Find" 
+            <AutoSuggestBox x:ConnectionId='6' x:Name="driversearch" Text="{Binding Address.Name}"  Header="Driver" VerticalAlignment="Stretch" PlaceholderText="Search" QueryIcon="Find" 
                                                       
                                                             
                                                                  Margin="0,0,0,10">
@@ -68,8 +69,8 @@
                     </DataTemplate>
                 </AutoSuggestBox.ItemTemplate>
             </AutoSuggestBox>
-            <Button x:ConnectionId='6' Name="Save" Content="Assign Driver"                   ></Button>
-            <TextBlock x:ConnectionId='7' Name="success" Margin="0,4,0,0"/>
+            <Button x:ConnectionId='7' Name="Save" Content="Assign Driver"                   ></Button>
+            <TextBlock x:ConnectionId='8' Name="success" Margin="0,4,0,0"/>
         </StackPanel>
         
     </Grid>

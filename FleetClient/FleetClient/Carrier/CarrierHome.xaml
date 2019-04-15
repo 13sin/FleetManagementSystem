@@ -17,11 +17,11 @@
                 <local:AssignShipmentOrderGrid x:Name="assignedshipmentordergridcontrol"></local:AssignShipmentOrderGrid>
             </PivotItem>
             <PivotItem Header="Map">
-
+                <local:Map HorizontalAlignment="Left" VerticalAlignment="Top" Height="832" Width="1600"/>
             </PivotItem>
-            <PivotItem Header="Accounts">
+            <!--<PivotItem Header="Accounts">
 
-            </PivotItem>
+            </PivotItem>-->
         </Pivot>
         <Button Content="Assign Shipment" Click="Send_Click" HorizontalAlignment="Left" Margin="191,8,0,0" VerticalAlignment="Top" ></Button>
         <Button x:Name="newtruck" Content="New Truck" Click="newtruck_Click" HorizontalAlignment="Left" Margin="327,8,0,0" VerticalAlignment="Top" ></Button>

@@ -119,6 +119,9 @@
     <Compile Include="Carrier\AssignShipmentOrder.xaml.cs">
       <DependentUpon>AssignShipmentOrder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Carrier\Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Customer\CustomerHome.xaml.cs">
       <DependentUpon>CustomerHome.xaml</DependentUpon>
     </Compile>
@@ -193,6 +196,7 @@
     <None Include="FleetClient_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\index.html" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -238,6 +242,10 @@
     <Page Include="Carrier\AssignShipmentOrder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carrier\Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Customer\CustomerHome.xaml">
       <SubType>Designer</SubType>
@@ -327,6 +335,9 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="PubnubUWP">
+      <Version>4.0.28</Version>
     </PackageReference>
     <PackageReference Include="System.IdentityModel.Tokens.Jwt">
       <Version>5.4.0</Version>

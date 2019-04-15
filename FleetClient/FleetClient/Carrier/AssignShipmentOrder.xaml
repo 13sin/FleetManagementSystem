@@ -10,13 +10,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <StackPanel Padding="40">
+            <Button x:Name="BackButton" Click="Back_Click" Style="{StaticResource NavigationBackButtonNormalStyle}"/>
             <TextBlock ><Run FontSize="40" Text="Assign Driver To Shipment"/></TextBlock>
 
 
             <ListView x:Name="shipmentOrderlist" Header="Shipment Order" Margin="0,0,0,10" SelectionChanged="shipmentorderlist_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="shipmentlistdatatemplate">
-                        <StackPanel Height="84" Padding="20" AutomationProperties.Name="{Binding CompositionName}">
+                        <StackPanel Height="84" Padding="20" >
                             <TextBlock Text="{Binding Id}" Tag="ID"  Style="{ThemeResource BaseTextBlockStyle}" Margin="0,4,0,0"/>
                             <TextBlock Text="{Binding Shipment.Origin.Address.Name}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>
                             <TextBlock Text="{Binding Shipment.OriginApptDatetime}" Style="{ThemeResource CaptionTextBlockStyle}" Opacity=".8" Margin="0,4,0,0"/>

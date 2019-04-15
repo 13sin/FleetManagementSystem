@@ -16,9 +16,9 @@
             <PivotItem Header="Sent Shipment Orders">
                 <local:SentShipmentOrderGrid x:ConnectionId='4' x:Name="sentshipmentordergridcontrol"></local:SentShipmentOrderGrid>
             </PivotItem>
-            <PivotItem Header="Accounts">
+            <!--<PivotItem Header="Accounts">
 
-            </PivotItem>
+            </PivotItem>-->
         </Pivot>
         <Button x:ConnectionId='3' Content="Send Shipment"                    HorizontalAlignment="Left" Margin="207,8,0,0" VerticalAlignment="Top" ></Button>
     </Grid>

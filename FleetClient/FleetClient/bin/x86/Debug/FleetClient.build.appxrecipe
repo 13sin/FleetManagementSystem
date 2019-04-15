@@ -46,6 +46,12 @@
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\portable.bouncycastle\1.8.1.2\lib\netstandard1.3\BouncyCastle.Crypto.dll">
+      <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\pubnubuwp\4.0.28\lib\uap10.0\PubnubUWP.dll">
+      <PackagePath>PubnubUWP.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
@@ -547,6 +553,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\Assets\index.html">
+      <PackagePath>Assets\index.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -606,6 +615,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\AssignShipmentOrder.xbf">
       <PackagePath>Carrier\AssignShipmentOrder.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\Map.xbf">
+      <PackagePath>Carrier\Map.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\CustomerHome.xbf">
       <PackagePath>Customer\CustomerHome.xbf</PackagePath>

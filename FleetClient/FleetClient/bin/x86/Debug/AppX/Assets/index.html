@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+  	<div id="map"></div>
+  	<script>
+  	  var map;
+  	  var marker;
+  	  function initMap() {
+  	    map = new google.maps.Map(
+  	        document.getElementById('map'),
+  	        {center: new google.maps.LatLng(0,0), zoom: 16});
+
+  	    var iconBase =
+  	        'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
+
+  	    
+
+
+  	      marker = new google.maps.Marker({
+  	        position: map.getCenter(),
+  	        icon: {
+  	              path: google.maps.SymbolPath.CIRCLE,
+  	              scale: 8
+  	            },
+  	        map: map
+  	      });
+  	  }
+  	</script>
+  	<script async defer
+  	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX9w0sxOcf9gZ6ChBzDibrhSBCqJdFWWo&callback=initMap">
+  	</script>
+
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.23.0.js"></script>
+    <script>
+    		
+    	function publish() {
+    	   
+    	    pubnub = new PubNub({
+    	    	subscribeKey: "sub-c-6480e3a2-5766-11e9-ac27-a2b77a78ee25",
+    	    	publishKey: "pub-c-7633429f-b38e-4a8e-a775-bda2d9fbd363",
+    	    	secretKey: "sec-c-NzhkZjAxZTEtNjk2YS00NTgwLWE0MDItNWM5ZDY4OWZjNjNk"
+    	    })
+    	       
+    	       
+    	    pubnub.addListener({
+    	        status: function(statusEvent) {
+    	            if (statusEvent.category === "PNConnectedCategory") {
+    	                //publishSampleMessage();
+    	            }
+    	        },
+    	        message: function(msg) {
+    	            console.log(msg.message.lat);
+    	            console.log(msg.message.lng);
+    	            console.log(msg.message);
+    	            map.setCenter(new google.maps.LatLng(msg.message.lat, msg.message.lng));
+    	            marker.setPosition(new google.maps.LatLng(msg.message.lat, msg.message.lng));
+    	            //document.getElementById('map').src = "https://www.google.com/maps/embed/v1/view?key=AIzaSyCX9w0sxOcf9gZ6ChBzDibrhSBCqJdFWWo&center="+msg.message.lat+","+msg.message.lng+"&zoom=18";
+    	        },
+    	        presence: function(presenceEvent) {
+    	            // handle presence
+    	        }
+    	    })      
+    	    console.log("Subscribing..");
+    	    pubnub.subscribe({
+    	        channels: ['fleetlocation'] 
+    	    });
+    	};
+    	publish();
+    </script>
+
+    
+  </body>
+</html>

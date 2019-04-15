@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+Assets\index.html
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -15,6 +16,7 @@ Carrier\AssignShipmentOrder.xbf
 Carrier\AssignShipmentOrderGrid.xbf
 Carrier\CarrierHome.xbf
 Carrier\CarrierShipmentOrderGrid.xbf
+Carrier\Map.xbf
 Carrier\NewTrailer.xbf
 Carrier\NewTruck.xbf
 Customer\CustomerHome.xbf

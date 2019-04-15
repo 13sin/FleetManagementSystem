@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-08T06:53:20.621</Modified>
+      <Modified>2019-04-13T16:34:00.414</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\FleetClient.exe">
       <PackagePath>entrypoint\FleetClient.exe</PackagePath>
-      <Modified>2019-04-08T06:53:20.000</Modified>
+      <Modified>2019-04-13T16:33:59.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\microsoft.identitymodel.jsonwebtokens\5.4.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll">
       <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
@@ -62,6 +62,14 @@
     <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2018-11-27T23:07:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\portable.bouncycastle\1.8.1.2\lib\netstandard1.3\BouncyCastle.Crypto.dll">
+      <PackagePath>BouncyCastle.Crypto.dll</PackagePath>
+      <Modified>2016-12-05T01:03:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\.nuget\packages\pubnubuwp\4.0.28\lib\uap10.0\PubnubUWP.dll">
+      <PackagePath>PubnubUWP.dll</PackagePath>
+      <Modified>2019-03-22T14:19:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.7\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -731,6 +739,10 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T05:33:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\Assets\index.html">
+      <PackagePath>Assets\index.html</PackagePath>
+      <Modified>2019-04-12T04:45:20.502</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-12-04T03:25:32.160</Modified>
@@ -771,115 +783,119 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\FleetClient.xr.xml">
       <PackagePath>FleetClient.xr.xml</PackagePath>
-      <Modified>2019-04-08T06:11:54.043</Modified>
+      <Modified>2019-04-13T16:33:58.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.718</Modified>
+      <Modified>2019-04-13T16:33:58.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\BrokerHome.xbf">
       <PackagePath>Broker\BrokerHome.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.719</Modified>
+      <Modified>2019-04-13T16:33:58.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\SendShipmentOrder.xbf">
       <PackagePath>Broker\SendShipmentOrder.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.719</Modified>
+      <Modified>2019-04-13T16:33:58.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\SentShipmentOrderGrid.xbf">
       <PackagePath>Broker\SentShipmentOrderGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.674</Modified>
+      <Modified>2019-04-13T16:33:58.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Broker\ShipmentOrderGrid.xbf">
       <PackagePath>Broker\ShipmentOrderGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.677</Modified>
+      <Modified>2019-04-13T16:33:58.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\CarrierHome.xbf">
       <PackagePath>Carrier\CarrierHome.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.719</Modified>
+      <Modified>2019-04-13T16:33:58.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\CarrierShipmentOrderGrid.xbf">
       <PackagePath>Carrier\CarrierShipmentOrderGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.680</Modified>
+      <Modified>2019-04-13T16:33:58.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\AssignShipmentOrderGrid.xbf">
       <PackagePath>Carrier\AssignShipmentOrderGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.683</Modified>
+      <Modified>2019-04-13T16:33:58.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\AssignShipmentOrder.xbf">
       <PackagePath>Carrier\AssignShipmentOrder.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.720</Modified>
+      <Modified>2019-04-13T16:33:58.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\Map.xbf">
+      <PackagePath>Carrier\Map.xbf</PackagePath>
+      <Modified>2019-04-13T16:33:58.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\CustomerHome.xbf">
       <PackagePath>Customer\CustomerHome.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.720</Modified>
+      <Modified>2019-04-13T16:33:58.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\DriverGrid.xbf">
       <PackagePath>Old\DriverGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.687</Modified>
+      <Modified>2019-04-13T16:33:58.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditDriver.xbf">
       <PackagePath>Old\EditDriver.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.721</Modified>
+      <Modified>2019-04-13T16:33:58.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\EditShipment.xbf">
       <PackagePath>Customer\EditShipment.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.693</Modified>
+      <Modified>2019-04-13T16:33:58.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditTrailer.xbf">
       <PackagePath>Old\EditTrailer.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.721</Modified>
+      <Modified>2019-04-13T16:33:58.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\EditTruck.xbf">
       <PackagePath>Old\EditTruck.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.722</Modified>
+      <Modified>2019-04-13T16:33:58.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.722</Modified>
+      <Modified>2019-04-13T16:33:58.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\NewDriver.xbf">
       <PackagePath>Old\NewDriver.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.722</Modified>
+      <Modified>2019-04-13T16:33:58.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\NewShipmentOrder.xbf">
       <PackagePath>Customer\NewShipmentOrder.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.722</Modified>
+      <Modified>2019-04-13T16:33:58.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\NewShipment.xbf">
       <PackagePath>Customer\NewShipment.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.705</Modified>
+      <Modified>2019-04-13T16:33:58.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\MainPage.xbf">
       <PackagePath>Old\MainPage.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.723</Modified>
+      <Modified>2019-04-13T16:33:58.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTrailer.xbf">
       <PackagePath>Carrier\NewTrailer.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.723</Modified>
+      <Modified>2019-04-13T16:33:58.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTruck.xbf">
       <PackagePath>Carrier\NewTruck.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.723</Modified>
+      <Modified>2019-04-13T16:33:58.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\ShipmentDetails.xbf">
       <PackagePath>Old\ShipmentDetails.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.724</Modified>
+      <Modified>2019-04-13T16:33:58.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\InProgressShipmentGrid.xbf">
       <PackagePath>Customer\InProgressShipmentGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.711</Modified>
+      <Modified>2019-04-13T16:33:58.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Customer\ShipmentGrid.xbf">
       <PackagePath>Customer\ShipmentGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.714</Modified>
+      <Modified>2019-04-13T16:33:58.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\TrailerGrid.xbf">
       <PackagePath>Old\TrailerGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.716</Modified>
+      <Modified>2019-04-13T16:33:58.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Old\TruckGrid.xbf">
       <PackagePath>Old\TruckGrid.xbf</PackagePath>
-      <Modified>2019-04-08T06:53:19.717</Modified>
+      <Modified>2019-04-13T16:33:58.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -908,11 +924,11 @@
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-08T06:33:06.178</Modified>
+      <Modified>2019-04-12T04:33:43.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Core\FleetClient.exe">
       <PackagePath>FleetClient.exe</PackagePath>
-      <Modified>2019-04-08T06:53:20.616</Modified>
+      <Modified>2019-04-13T16:34:00.407</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

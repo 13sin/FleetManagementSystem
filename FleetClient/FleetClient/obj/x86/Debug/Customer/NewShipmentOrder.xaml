@@ -10,10 +10,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <StackPanel Padding="40">
+            <Button x:ConnectionId='2' x:Name="BackButton"                    Style="{StaticResource NavigationBackButtonNormalStyle}"/>
             <TextBlock ><Run FontSize="40" Text="Send Shipment"/></TextBlock>
 
 
-            <ListView x:ConnectionId='2' x:Name="shipmentlist" Header="Shipment" Margin="0,0,0,10"                                                 >
+            <ListView x:ConnectionId='3' x:Name="shipmentlist" Header="Shipment" Margin="0,0,0,10"                                                 >
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="shipmentlistdatatemplate">
                         <StackPanel Height="84" Padding="20" AutomationProperties.Name="{Binding CompositionName}">
@@ -26,7 +27,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <AutoSuggestBox x:ConnectionId='3' x:Name="brokersearch" Text="{Binding Address.Name}"  Header="Broker" VerticalAlignment="Stretch" PlaceholderText="Search" QueryIcon="Find" 
+            <AutoSuggestBox x:ConnectionId='4' x:Name="brokersearch" Text="{Binding Address.Name}"  Header="Broker" VerticalAlignment="Stretch" PlaceholderText="Search" QueryIcon="Find" 
                                                       
                                                             
                                                                  Margin="0,0,0,10">
@@ -42,8 +43,8 @@
                     </DataTemplate>
                 </AutoSuggestBox.ItemTemplate>
             </AutoSuggestBox>
-            <Button x:ConnectionId='4' Name="Save" Content="Send Shipment"                   ></Button>
-            <TextBlock x:ConnectionId='5' Name="success" Margin="0,4,0,0"/>
+            <Button x:ConnectionId='5' Name="Save" Content="Send Shipment"                   ></Button>
+            <TextBlock x:ConnectionId='6' Name="success" Margin="0,4,0,0"/>
         </StackPanel>
         
     </Grid>

@@ -435,3 +435,11 @@ C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\NewTrail
 C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\NewTruck.xbf
 C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTrailer.xbf
 C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\NewTruck.xbf
+C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\BouncyCastle.Crypto.dll
+C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\BouncyCastle.Crypto.pdb
+C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\PubnubUWP.dll
+C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\Map.g.i.cs
+C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\Map.g.cs
+C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\Map.xaml
+C:\Users\Red\source\repos\FleetClient\FleetClient\obj\x86\Debug\Carrier\Map.xbf
+C:\Users\Red\source\repos\FleetClient\FleetClient\bin\x86\Debug\Carrier\Map.xbf
