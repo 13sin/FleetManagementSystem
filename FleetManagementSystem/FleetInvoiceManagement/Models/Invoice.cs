@@ -8,6 +8,11 @@ namespace FleetInvoiceManagement.Models
 {
     public class Invoice
     {
+
+        public Invoice()
+        {
+            CreationDate = DateTime.Now;
+        }
         
         public Guid ID { get; set; }
 

@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Generate Invoice";
+    ViewData["CreationDate"] = DateTime.Now.ToShortDateString();
+
 }
 
 <script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
@@ -42,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CreationDate" class="control-label"></label>
-                <input asp-for="CreationDate" class="form-control" />
+                <input asp-for="CreationDate" class="form-control" value="@ViewData["CreationDate"]" readonly/>
                 <span asp-validation-for="CreationDate" class="text-danger"></span>
             </div>
             <div class="form-group">

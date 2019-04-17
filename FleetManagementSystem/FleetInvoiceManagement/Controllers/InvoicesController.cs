@@ -58,7 +58,11 @@ namespace FleetInvoiceManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,InvoiceTitle,Price,Tax,Sales,CreationDate")] Invoice invoice)
         {
-            string startupPath = AppDomain.CurrentDomain.BaseDirectory+ "\\temp";
+
+            System.Diagnostics.Trace.Write("Base Directory is : " + AppDomain.CurrentDomain.BaseDirectory);
+            System.Diagnostics.Trace.Write("Current Directory is : " + Environment.CurrentDirectory);
+
+            string startupPath = Environment.CurrentDirectory + "\\temp";
 
 
             var OutputPath = startupPath + "\\" + invoice.InvoiceTitle + ".pdf";
@@ -67,9 +71,10 @@ namespace FleetInvoiceManagement.Controllers
             if (ModelState.IsValid)
             {
                  invoice.ID = Guid.NewGuid();
+                 invoice.CreationDate = DateTime.Now;
                  _context.Add(invoice);
                  await _context.SaveChangesAsync();
-
+                 
                 var Renderer = new IronPdf.HtmlToPdf();
 
                 var html = "<div style=\"width:100%;height:400px;border:1px solid black\">" +
@@ -102,15 +107,16 @@ namespace FleetInvoiceManagement.Controllers
                 PDF.SaveAs(OutputPath);
 
 
-                //return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
             }
-            //return View(invoice);
-            var fileStream = new FileStream("~/Content/files/" + OutputPath,
+            return View(invoice);
+            /*var fileStream = new FileStream("~/Content/files/" + OutputPath,
                                      FileMode.Open,
                                      FileAccess.Read
                                    );
             var fsResult = new FileStreamResult(fileStream, "application/pdf");
             return fsResult;
+            */
         }
 
         // GET: Invoices/Edit/5

@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace FleetInvoiceManagement.Data.Migrations
+namespace FleetInvoiceManagement.Migrations
 {
-    public partial class CreateIdentitySchema : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,6 +45,22 @@ namespace FleetInvoiceManagement.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Invoice",
+                columns: table => new
+                {
+                    ID = table.Column<Guid>(nullable: false),
+                    InvoiceTitle = table.Column<string>(nullable: false),
+                    Price = table.Column<double>(nullable: false),
+                    Tax = table.Column<double>(nullable: false),
+                    Sales = table.Column<double>(nullable: false),
+                    CreationDate = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Invoice", x => x.InvoiceTitle);
                 });
 
             migrationBuilder.CreateTable(
@@ -209,6 +225,9 @@ namespace FleetInvoiceManagement.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Invoice");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
