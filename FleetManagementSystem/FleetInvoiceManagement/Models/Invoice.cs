@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,17 +9,12 @@ namespace FleetInvoiceManagement.Models
 {
     public class Invoice
     {
-
-        public Invoice()
-        {
-            CreationDate = DateTime.Now;
-        }
-        
+        [Key]
         public Guid ID { get; set; }
 
         [Required]
         [Display(Name = "Invoice Title")]
-        [Key]
+        [Remote("IsInvoiceTitleExists","Invoices",ErrorMessage = "Invoice Title already exists")]
         public string InvoiceTitle { get; set; }
 
         [Required]

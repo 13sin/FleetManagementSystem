@@ -21,12 +21,13 @@ namespace FleetInvoiceManagement.Migrations
 
             modelBuilder.Entity("FleetInvoiceManagement.Models.Invoice", b =>
                 {
-                    b.Property<string>("InvoiceTitle")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("CreationDate");
 
-                    b.Property<Guid>("ID");
+                    b.Property<string>("InvoiceTitle")
+                        .IsRequired();
 
                     b.Property<double>("Price");
 
@@ -34,7 +35,7 @@ namespace FleetInvoiceManagement.Migrations
 
                     b.Property<double>("Tax");
 
-                    b.HasKey("InvoiceTitle");
+                    b.HasKey("ID");
 
                     b.ToTable("Invoice");
                 });

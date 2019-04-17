@@ -60,7 +60,7 @@ namespace FleetInvoiceManagement.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Invoice", x => x.InvoiceTitle);
+                    table.PrimaryKey("PK_Invoice", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(

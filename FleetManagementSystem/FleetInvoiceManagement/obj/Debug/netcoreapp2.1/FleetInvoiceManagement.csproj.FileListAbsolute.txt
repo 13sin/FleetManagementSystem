@@ -88,11 +88,6 @@ C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\Fle
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Home\Team.g.cshtml.cs
-C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Create.g.cshtml.cs
-C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Delete.g.cshtml.cs
-C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Details.g.cshtml.cs
-C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Edit.g.cshtml.cs
-C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Index.g.cshtml.cs
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -106,3 +101,8 @@ C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\Fle
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.dll
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.pdb
 C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\FleetInvoiceManagement.csproj.CopyComplete
+C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Create.g.cshtml.cs
+C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Delete.g.cshtml.cs
+C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Details.g.cshtml.cs
+C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Edit.g.cshtml.cs
+C:\Users\SECURITY\Desktop\TEST FOLDER\Shiva\FleetWorks\FleetManagementSystem\FleetInvoiceManagement\obj\Debug\netcoreapp2.1\Razor\Views\Invoices\Index.g.cshtml.cs

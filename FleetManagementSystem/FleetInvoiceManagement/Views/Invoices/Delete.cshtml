@@ -4,48 +4,61 @@
     ViewData["Title"] = "Delete";
 }
 
-<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Invoice</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.InvoiceTitle)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.InvoiceTitle)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Tax)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Tax)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Sales)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Sales)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.CreationDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.CreationDate)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
-</div>
+<script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handler for .ready() called.
+        $('html, body').animate({
+            scrollTop: $('#homecontainer').offset().top
+        }, 'slow');
+    });
+</script>
+
+<div id="homecontainer">
+    <div style="height:100px;width:100%;margin-top:25px;"></div>
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete Invoice : @Html.DisplayFor(model => model.InvoiceTitle)?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.InvoiceTitle)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.InvoiceTitle)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Tax)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Tax)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Sales)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Sales)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.CreationDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CreationDate)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="ID" />
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </div>
+    </div>

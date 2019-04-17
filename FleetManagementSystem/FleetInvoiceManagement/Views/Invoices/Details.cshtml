@@ -4,6 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
+
 <script src="~/css/js/vendor/jquery-1.12.4.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -15,43 +16,41 @@
 </script>
 
 
-<div id='homecontainer'>
-    <br />
-    <br />
-    <br />
 
-    <h2>Detail of Invoice: @Html.DisplayFor(model => model.InvoiceTitle)</h2>
+<div id="homecontainer">
+<div style="height:100px;width:100%;margin-top:25px;"></div>
+<h2>Detail Of Invoice</h2>
 
     <div>
-        <h4>Invoice</h4>
+        <h4>Invoice : @Html.DisplayFor(model => model.InvoiceTitle)</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.InvoiceTitle):
+                @Html.DisplayNameFor(model => model.InvoiceTitle)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.InvoiceTitle)
             </dd>
             <dt>
-                @Html.DisplayNameFor(model => model.Price):
+                @Html.DisplayNameFor(model => model.Price)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.Price)
             </dd>
             <dt>
-                @Html.DisplayNameFor(model => model.Tax):
+                @Html.DisplayNameFor(model => model.Tax)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.Tax)
             </dd>
             <dt>
-                @Html.DisplayNameFor(model => model.Sales):
+                @Html.DisplayNameFor(model => model.Sales)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.Sales)
             </dd>
             <dt>
-                @Html.DisplayNameFor(model => model.CreationDate):
+                @Html.DisplayNameFor(model => model.CreationDate)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.CreationDate)

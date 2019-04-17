@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using FleetInvoiceManagement.Data;
 using FleetInvoiceManagement.Models;
 using IronPdf;
-using System.IO;
 
 namespace FleetInvoiceManagement.Controllers
 {
@@ -58,30 +57,27 @@ namespace FleetInvoiceManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,InvoiceTitle,Price,Tax,Sales,CreationDate")] Invoice invoice)
         {
-
             System.Diagnostics.Trace.Write("Base Directory is : " + AppDomain.CurrentDomain.BaseDirectory);
             System.Diagnostics.Trace.Write("Current Directory is : " + Environment.CurrentDirectory);
 
             string startupPath = Environment.CurrentDirectory + "\\temp";
-
-
             var OutputPath = startupPath + "\\" + invoice.InvoiceTitle + ".pdf";
-
+            
 
             if (ModelState.IsValid)
             {
-                 invoice.ID = Guid.NewGuid();
-                 invoice.CreationDate = DateTime.Now;
-                 _context.Add(invoice);
-                 await _context.SaveChangesAsync();
-                 
+                invoice.ID = Guid.NewGuid();
+                _context.Add(invoice);
+                await _context.SaveChangesAsync();
+
+                /*PDF Generate Code starts*/
                 var Renderer = new IronPdf.HtmlToPdf();
 
                 var html = "<div style=\"width:100%;height:400px;border:1px solid black\">" +
-                    "<table><tr><td>Invoice Title</td><td>"+invoice.InvoiceTitle+"</td></tr>" +
-                    "<tr><td>Price($)</td><td>" + invoice.Price+ "</td></tr>" +
-                    "<tr><td>Sales($)</td><td>" + invoice.Sales+ "</td></tr>" +
-                    "<tr><td>Date</td><td>" + invoice.CreationDate+ "</td></tr>" +
+                    "<table><tr><td>Invoice Title</td><td>" + invoice.InvoiceTitle + "</td></tr>" +
+                    "<tr><td>Price($)</td><td>" + invoice.Price + "</td></tr>" +
+                    "<tr><td>Sales($)</td><td>" + invoice.Sales + "</td></tr>" +
+                    "<tr><td>Date</td><td>" + invoice.CreationDate + "</td></tr>" +
                     "</table>" +
                     "</div>";
                 var PDF = Renderer.RenderHtmlAsPdf(html);
@@ -91,10 +87,10 @@ namespace FleetInvoiceManagement.Controllers
                 Renderer.PrintOptions.CssMediaType = PdfPrintOptions.PdfCssMediaType.Print;
                 Renderer.PrintOptions.Header = new SimpleHeaderFooter()
                 {
-                    CenterText = "Invoice: "+invoice.InvoiceTitle,
+                    CenterText = "Invoice: " + invoice.InvoiceTitle,
                     DrawDividerLine = true,
                     FontSize = 16
-                };                
+                };
                 Renderer.PrintOptions.Footer = new SimpleHeaderFooter()
                 {
                     LeftText = DateTime.Now.ToString(),
@@ -103,20 +99,14 @@ namespace FleetInvoiceManagement.Controllers
                     FontSize = 14
                 };
 
-              
+
                 PDF.SaveAs(OutputPath);
+                /*PDF generate code ends*/
 
 
                 return RedirectToAction(nameof(Index));
             }
             return View(invoice);
-            /*var fileStream = new FileStream("~/Content/files/" + OutputPath,
-                                     FileMode.Open,
-                                     FileAccess.Read
-                                   );
-            var fsResult = new FileStreamResult(fileStream, "application/pdf");
-            return fsResult;
-            */
         }
 
         // GET: Invoices/Edit/5
@@ -203,5 +193,20 @@ namespace FleetInvoiceManagement.Controllers
         {
             return _context.Invoice.Any(e => e.ID == id);
         }
+
+        public JsonResult IsInvoiceTitleExists(string invoiceTitle)
+        {
+            var validateName = _context.Invoice.FirstOrDefault
+                                (x => x.InvoiceTitle== invoiceTitle);
+            if (validateName != null)
+            {
+                return Json(false);
+            }
+            else
+            {
+                return Json(true);
+            }
+        }
+
     }
 }
